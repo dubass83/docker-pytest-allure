@@ -1,7 +1,5 @@
-FROM python:3.7.4-slim-stretch
+FROM python:3
 LABEL maintainer="MaksSych@gmail.com"
-
+WORKDIR /test
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
-
-CMD ["/bin/bash"]
